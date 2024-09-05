@@ -1,0 +1,31 @@
+<config>
+	<test driver="driver.Driver" method="main" label="Lab 4: Parsing Good Students!">
+		<args></args>
+		<input>example.txt
+1</input>
+		<mark grade="50">
+			<check label="Did you list them right?"><regex>The name of an input file
+49403477,57.87,Yedidia Chamandi
+44237670,59.23,Affan Ross
+45810297,24.38,Andrea Asencios
+42208695,84.53,Hanad-Keysse Zakaria
+43100145,73.49,Guanchen Peerthum
+Give a 0-based index of an entry to remove, we will then print out all other students
+49403477,57.87,Yedidia Chamandi
+45810297,24.38,Andrea Asencios
+42208695,84.53,Hanad-Keysse Zakaria
+43100145,73.49,Guanchen Peerthum
+</regex></check>
+		</mark>
+	</test>
+	<test driver="driver.Driver" method="main" label="Lab 4: Parsing Malformed Students!">
+		<args></args>
+		<input>badexample.txt
+1</input>
+		<mark grade="50">
+			<check label="Did you catch the exceptiobn?"><regex>The name of an input file
+InvalidIdException: lab4.InvalidIDException: ID is out of valid range.
+</regex></check>
+		</mark>
+	</test>
+</config>
