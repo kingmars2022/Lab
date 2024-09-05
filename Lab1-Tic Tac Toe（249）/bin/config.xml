@@ -1,0 +1,20 @@
+<config>
+    <test driver="lab1.CheckWin" method="main" label="Lab 1: Tic-Tac-Toe Win Checker a">
+        <args>03142</args>
+        <mark grade="40">
+            <check label="checking for row win"><regex>X wins on a row</regex></check>
+        </mark>
+    </test>
+    <test driver="lab1.CheckWin" method="main" label="Lab 1: Tic-Tac-Toe Win Checker b">
+        <args>405386</args>
+        <mark grade="40">
+            <check label="checking for column win"><regex>O wins on a column</regex></check>
+        </mark>
+    </test>
+    <test driver="lab1.CheckWin" method="main" label="Lab 1: Tic-Tac-Toe Win Checker c">
+        <args>023684</args>
+        <mark grade="20">
+            <check label="checking for diagonal win"><regex>O wins on a diagonal</regex></check>
+        </mark>
+    </test>
+</config>
