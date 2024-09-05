@@ -64,3 +64,54 @@ Instructions
 4. Expected Output:
 • The main method should output the status of each item before and after check-out and return, and verify the type using instanceof.
 
+lab 4 - File IO and Exceptions
+
+Objective:
+Write a program that reads a list of students from a text file, processes the data based on user input,
+and writes the output to a second file. The program should handle various exceptions during execution.
+
+Task:
+You will have input files formatted with the following fields:
+
+StudentID, Grade, Name
+
+An example of that might be students.txt (included here)”
+
+49403477, 57.87, Yedidia Chamandi
+44237670, 59.23, Affan Ross
+45810297, 24.38, Andrea Asencios
+42208695, 84.53, Hanad-Keysse Zakaria
+43100145, 73.49, Guanchen Peerthum
+
+Your program will prompt the user for a filename and load the file, creating a list of Students with
+appropraite fields. You may use an array of Students or some form of List of students if you already
+know how, but you should not change the order. The Student class should be in the lab4 package. If
+there is an error in parsing you should throw an Exception. If there is no error, the driver will ask the
+user for an output filename and a line number, and then output all rows except that one to the file.
+
+Exceptions:
+
+An example of that might be students.txt with errors (included here)”
+
+41217567, 29.52, Mehrad Patel
+28898266, 54.80, Jad Yew-Hin
+24148326, 15.28, Mahir Sato
+26976695, 25.40, Olivier Abusamhadaneh
+2036325, nx.zt,
+
+Driver:
+
+A Driver.java file is included in the assignment zip within the driver package. This file must not be
+changed and should be consulted for understanding how your program is expected to run and output
+clear messages based on the program’s execution. The lab markers will run this with the good and bad
+example and should attempt to break other things.
+
+DebugRunner
+See instructions for Assignment 3. Once again you can just run DebugRunner and it’ll tell you how
+you’re doing. If the lab instructor can run your DebugRunner successfully, you’re done.
+
+prj> java DebugRunner
+
+where prj> is meant to indicate a prompt telling you you’re in the prj folder.
+
+
